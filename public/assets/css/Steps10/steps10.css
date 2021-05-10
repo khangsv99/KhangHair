@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.container-main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-main .banner-main {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.banner-main img {
+  width: 100%;
+  height: auto;
+}
+
+.step10 {
+  width: 100%;
+}
+
+.step10 .menu-step .row-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step10 .menu-step .row-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.menu-step .item-menu-step {
+  flex-basis: 50%;
+  /* width: 100%; */
+  overflow: hidden;
+}
+
+.menu-step .item-menu-step img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content-item {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  padding: 15px;
+}
+
+.item-menu-step .content-item h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.item-menu-step .content-item h3::before {
+  border-left: 8px solid #ffcc33;
+  content: "";
+  padding-right: 7px;
+  font-size: 1.1;
+}
+
+.item-menu-step .content-item p {
+  font-size: 16px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.item-menu-step .content-item p::before {
+  content: "◆";
+  position: absolute;
+  left: 0px;
+}
+
+.menu-step .line {
+  flex-basis: 100%;
+  padding: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+}
+
+/* ================================Responsive===================================== */
+
+/* ipad-pro */
+@media screen and (max-width: 1024px) {
+  .container-main {
+    width: 100%;
+  }
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+}
+
+/* iphone */
+@media screen and (max-width: 480px) {
+  .menu-step .item-menu-step {
+    flex-basis: 100%;
+  }
+
+  .row-right{
+    flex-direction: column-reverse;
+  }
+
+  .item-menu-step .content-item{
+    padding-right: unset;
+    padding: 30px 15px;
+  }
+  .menu-step .line {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

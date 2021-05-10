@@ -1,0 +1,378 @@
+/* :root {
+    --pd: 10px;
+    --ticket-ml: 20px;
+    --red: red;
+    --white: white;
+    --text-color: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+} */
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-justify--center {
+    align-items: center;
+    justify-content: center;
+}
+
+.pt-48 {
+    padding-top: 48px;
+}
+
+.pt-b-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+/* style home */
+
+.owl-nav {
+    display: none;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.heading-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-title {
+    font-size: 22px;
+}
+
+.heading-more {
+    color: rgb(226, 19, 19);
+}
+
+.content {
+    position: relative;
+    z-index: 100;
+    margin-top: 80px;
+}
+
+.hair-hot__thumb {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hair-hot__item {
+    flex: 24%;
+    margin: 5px;
+}
+
+.brand__item {
+    display: flex;
+}
+
+.product__item {
+    background-color: #FDFDFD;
+    margin-bottom: 30px;
+    padding: 15px;
+    flex: 25%;
+    /* max-width: 25%; */
+}
+
+.product__item:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.2s linear;
+}
+
+.product__detail {
+    padding: 0 10px;
+}
+
+.product__link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.product__link:hover {
+    color: #dea43e;
+}
+
+.product__price--new {
+    font-size: 14px;
+    font-weight: 800;
+    color: red;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    color: #afaeae;
+    font-weight: 200;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* style 10 step */
+
+.ten-step {
+    /* padding: 30px; */
+    background-color: #FBF4F0;
+}
+
+.ten-step__list {
+    padding: 20px 0;
+}
+
+.ten-step__item {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.ten-step__item:hover .ten-step__item-price {
+    background: #df8e6a;
+    color: #fff;
+    transition: transform 0.3s linear;
+}
+
+.ten-step__item-link {
+    overflow: hidden;
+    transition: transform 0.4s linear;
+}
+
+.ten-step__item:hover .ten-step__item-img {
+    transform: scale(1.2);
+    transition: transform 0.4s linear;
+}
+
+.ten-step__item-content {
+    padding: 15px;
+}
+
+.ten-step__item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ten-step__sidebar-title {
+    font-size: 25px;
+}
+
+.ten-step__sidebar-desc, .ten-step__item-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.ten-step__sidebar-price, .ten-step__item-price {
+    flex: 2;
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    color: #E19776;
+    background-color: #FBF4F0;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 82px;
+    text-align: center;
+}
+
+.ten-step__sidebar-price {
+    background-color: #fff;
+}
+
+.ten-step__item-desc {
+    font-size: 15px;
+    line-height: 30px;
+    color: #817f7f;
+    margin: 0;
+    text-overflow: ellipsis;
+    width: 181px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* style sidebar */
+
+.ten-step__sidebar {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+}
+
+.ten-step__sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6.2px;
+    cursor: pointer;
+}
+
+.ten-step__sidebar-item:hover {
+    color: #dea43e;
+}
+
+.ten-step__sidebar-desc, .ten-step__sidebar-price {
+    margin: 0;
+}
+
+.ten-step__nav-list {
+    display: none;
+}
+
+.ten-step-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .brand__item {
+        flex-wrap: wrap;
+    }
+    .product__item {
+        flex: 33.33%;
+        /* max-width: 33.33%; */
+    }
+    .hair-hot__item {
+        flex: 33.33%;
+    }
+    .ten-step__nav-list {
+        display: flex;
+        overflow-x: scroll;
+    }
+    .ten-step__nav-item {
+        flex: 1;
+        padding: 5px;
+        min-width: 100px;
+        background-color: #1C9CEA;
+        margin-right: 20px;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product__item {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .heading-title {
+        font-size: 16px;
+    }
+    .heading-more {
+        font-size: 14px;
+    }
+    .ten-step-mobile-box {
+        text-align: center;
+    }
+    .ten-step-mobile {
+        display: block;
+    }
+    .ten-step {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .product__price--new, .product__link {
+        font-size: 12px;
+    }
+    .product__price--old {
+        display: block;
+        margin-top: 5px;
+        margin-left: 0;
+        font-size: 11px;
+    }
+    .ten-step__nav-item {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .product__item {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ============= Step 10 =============== */
+
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.ten-step-mobile .owl-nav {
+    display: block!important;
+}
+
+.ten-step-mobile button.owl-prev {
+    left: 0;
+}
+
+.ten-step-mobile .owl-nav button.owl-prev, .ten-step-mobile .owl-nav button.owl-next {
+    position: absolute;
+    color: rgb(22, 22, 22);
+    font-size: 40px!important;
+    top: 50%!important;
+    background-color: #ffffff!important;
+}
+
+.ten-step-mobile button.owl-next {
+    right: 0;
+}

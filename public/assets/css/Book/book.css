@@ -1,0 +1,216 @@
+/* line 27, book.scss */
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  /* line 31, book.scss */
+  .steps .slogan {
+    text-align: center; }
+  /* line 34, book.scss */
+  .steps .three-steps {
+    position: relative;
+    text-align: center; }
+    /* line 37, book.scss */
+    .steps .three-steps a {
+      top: 0px;
+      font-size: 22px; }
+    /* line 42, book.scss */
+    .steps .three-steps hr {
+      font-weight: 700;
+      width: 50px;
+      display: inline-grid;
+      height: 6px;
+      padding-left: 160px;
+      margin: 0px 0px;
+      background-color: black; }
+
+/* line 55, book.scss */
+.stylist {
+  text-align: center; }
+  /* line 57, book.scss */
+  .stylist .stylist-label {
+    padding: 20px; }
+    /* line 59, book.scss */
+    .stylist .stylist-label .fa-minus-circle {
+      color: black; }
+
+/* line 65, book.scss */
+.list-avatar {
+  overflow: auto;
+  white-space: nowrap;
+  width: auto;
+  width: 100%; }
+  /* line 74, book.scss */
+  .list-avatar .list-avatar-item {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    max-width: 90px;
+    min-width: 85px;
+    padding: 0px 10px;
+    padding-top: 10px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    /* line 87, book.scss */
+    .list-avatar .list-avatar-item .avatar {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #7cde56;
+      border-radius: 50%;
+      cursor: pointer; }
+  /* line 97, book.scss */
+  .list-avatar .list-avatar-item:active {
+    background-color: #e5e5e5;
+    opacity: 0.7; }
+  /* line 101, book.scss */
+  .list-avatar .list-avatar-item:hover {
+    background-color: #e4e4e4; }
+
+/* line 108, book.scss */
+.list-avatar-item span img {
+  margin: 0px auto; }
+/* line 112, book.scss */
+.list-avatar-item .user-name {
+  overflow: hidden; }
+
+/* line 117, book.scss */
+.stylish-active {
+  background-color: #9f9a9a !important; }
+
+/* line 121, book.scss */
+.schedule {
+  text-align: center;
+  margin-top: 10px; }
+  /* line 124, book.scss */
+  .schedule b {
+    padding: 5px 0px; }
+
+/* line 129, book.scss */
+.slot {
+  width: 100%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-top: unset;
+  border-collapse: unset;
+  border-spacing: 4px; }
+  /* line 137, book.scss */
+  .slot tr td {
+    text-align: center;
+    padding: 10px 32px;
+    border-bottom: 3px solid green; }
+  /* line 143, book.scss */
+  .slot tr .het-slot {
+    border-bottom: 3px solid red; }
+
+/* line 149, book.scss */
+.slot tbody tr td:hover {
+  background-color: #b7d4f0; }
+
+/* line 153, book.scss */
+.slot-status {
+  padding-top: 5px; }
+
+/* line 157, book.scss */
+.nav > li > a {
+  padding: 10px 30px;
+  color: #555; }
+
+/* line 163, book.scss */
+.nav-tabs {
+  display: flex; }
+  /* line 166, book.scss */
+  .nav-tabs li {
+    flex-basis: 600px; }
+
+/* line 171, book.scss */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #555;
+  color: #fff; }
+
+/* line 177, book.scss */
+.modal-header {
+  text-align: center; }
+  /* line 179, book.scss */
+  .modal-header img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer; }
+  /* line 187, book.scss */
+  .modal-header .popup-name {
+    padding: 10px 0px;
+    text-align: center; }
+  /* line 192, book.scss */
+  .modal-header .rate i {
+    color: #ff9321; }
+  /* line 196, book.scss */
+  .modal-header .close {
+    position: absolute;
+    top: 10px;
+    left: 575px; }
+
+/* line 204, book.scss */
+.modal-body .list-cmt {
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid #e2e2e2;
+  padding: 0px 10px;
+  padding-top: 10px; }
+  /* line 210, book.scss */
+  .modal-body .list-cmt .msg-box {
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 12px;
+    border-bottom-right-radius: unset;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px; }
+    /* line 219, book.scss */
+    .modal-body .list-cmt .msg-box .cmt-user {
+      position: absolute;
+      top: -10px;
+      left: 7px;
+      background-color: white;
+      font-size: 15px;
+      margin: 0px;
+      width: auto;
+      padding: 0px 3px; }
+    /* line 229, book.scss */
+    .modal-body .list-cmt .msg-box p {
+      width: auto;
+      margin: 0px;
+      font-size: 13px; }
+  /* line 235, book.scss */
+  .modal-body .list-cmt .right {
+    text-align: right;
+    border-radius: 12px;
+    border-bottom-left-radius: unset;
+    left: 105px; }
+    /* line 240, book.scss */
+    .modal-body .list-cmt .right .cmt-user {
+      top: -10px;
+      left: 360px; }
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) {
+  /* line 259, book.scss */
+  .book-container-flex, .slot {
+    width: 100%; }
+
+  /* line 263, book.scss */
+  .list-avatar {
+    max-width: 100%;
+    width: 100%; } }
+@media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (orientation: portrait) {
+  /* line 276, book.scss */
+  .book-container-flex, .slot {
+    width: 100%; }
+
+  /* line 280, book.scss */
+  .list-avatar {
+    max-width: 100%;
+    width: 100%; } }

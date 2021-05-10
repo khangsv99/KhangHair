@@ -1,0 +1,133 @@
+:root {
+    --pd: 10px;
+    --ticket-ml: 20px;
+    --red: red;
+    --white: white;
+    --text-color: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.align-justify--center{
+    align-items: center;
+    justify-content: center;
+}
+
+.pt-48 {
+    padding-top: 48px;
+}
+
+.pt-b-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+/* style service other */
+
+.service{
+    padding: 50px 0;
+}
+
+.service-wrapper{
+    background-color: var(--white);
+}
+
+.service__title{
+    font-size: 18px;
+    position: relative;
+}
+
+
+.combo-10step-notify{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.combo-10step-notify--important{
+    color: var(--red);
+    font-weight: 600;
+}
+
+.combo-other-content__item{
+    margin-bottom: 15px;
+}
+
+/* Carousel  */
+
+.owl-nav {
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%; */
+    display: none;
+}
+
+/* button.owl-prev {
+    left: -30px;
+    right: 0;
+    bottom: -50%;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+button.owl-next{
+    right: -30px;
+    bottom: -50%;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+button.owl-next:hover{
+    background: none;
+}
+
+
+button.owl-prev>span,button.owl-next>span {
+    font-size: 40px;
+    color: #0a0909;
+} */
+
+.owl-dots{
+    display: none;
+}

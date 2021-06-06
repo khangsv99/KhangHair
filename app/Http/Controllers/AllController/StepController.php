@@ -10,9 +10,9 @@ class StepController extends Controller
 {
 	public function index() {
 
-		$10step = DB::table('service__details')->where('name', 'John')->first();
+		$steps = DB::table('service__details')->where('name', 'John')->first();
 
-		return view('_allView.step');
+		return view('_allView.step')->with('steps', $steps);
 	}
     //
 }

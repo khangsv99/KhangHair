@@ -1,216 +1,561 @@
-/* line 27, book.scss */
-.steps {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  /* line 31, book.scss */
-  .steps .slogan {
-    text-align: center; }
-  /* line 34, book.scss */
-  .steps .three-steps {
-    position: relative;
-    text-align: center; }
-    /* line 37, book.scss */
-    .steps .three-steps a {
-      top: 0px;
-      font-size: 22px; }
-    /* line 42, book.scss */
-    .steps .three-steps hr {
-      font-weight: 700;
-      width: 50px;
-      display: inline-grid;
-      height: 6px;
-      padding-left: 160px;
-      margin: 0px 0px;
-      background-color: black; }
+/* line 1, book.scss */
+* {
+    /* font-family: "Times New Roman", Times, serif; */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
 
-/* line 55, book.scss */
-.stylist {
-  text-align: center; }
-  /* line 57, book.scss */
-  .stylist .stylist-label {
-    padding: 20px; }
-    /* line 59, book.scss */
-    .stylist .stylist-label .fa-minus-circle {
-      color: black; }
 
-/* line 65, book.scss */
-.list-avatar {
-  overflow: auto;
-  white-space: nowrap;
-  width: auto;
-  width: 100%; }
-  /* line 74, book.scss */
-  .list-avatar .list-avatar-item {
+   .book-container{
+      display: flex;
+   }
+
+  /* line 7, book.scss */
+  .book-container {
+
+    justify-content: center; }
+
+  .book-container-flex{
+    width: 1140px;
+  }
+
+  .wrap-day {
+    border: 1px solid #9f9a9a;
+    padding: 40px;
+  }
+
+.booking {
+    background-color: #B2121E;
+}
+
+.item-time {
     display: inline-block;
     text-align: center;
-    cursor: pointer;
-    max-width: 90px;
-    min-width: 85px;
-    padding: 0px 10px;
-    padding-top: 10px;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-    /* line 87, book.scss */
-    .list-avatar .list-avatar-item .avatar {
-      display: block;
-      width: 50px;
-      height: 50px;
-      border: 2px solid #7cde56;
+    padding: 30px;
+    width: 19%;
+    border-bottom: 3px solid green;
+}
+
+.item-time:hover {
+    background-color: #9f9a9a ;
+}
+
+  /* line 12, book.scss */
+  b {
+    display: block; }
+
+  /* line 17, book.scss */
+  .book-container {
+    width: 100%;
+    margin-top: 20px; }
+
+  /* line 27, book.scss */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    /* line 31, book.scss */
+    .steps .slogan {
+      text-align: center; }
+    /* line 34, book.scss */
+    .steps .three-steps {
+      position: relative;
+      text-align: center; }
+      /* line 37, book.scss */
+      .steps .three-steps a {
+        top: 0px;
+        font-size: 22px; }
+      /* line 42, book.scss */
+      .steps .three-steps hr {
+        font-weight: 700;
+        width: 50px;
+        display: inline-grid;
+        height: 6px;
+        padding-left: 160px;
+        margin: 0px 0px;
+        background-color: black; }
+
+  /* line 55, book.scss */
+  .stylist {
+    text-align: center; }
+    /* line 57, book.scss */
+    .stylist .stylist-label {
+      padding: 20px; }
+      /* line 59, book.scss */
+      .stylist .stylist-label .fa-minus-circle {
+        color: black; }
+
+  /* line 65, book.scss */
+  .list-avatar {
+    overflow: auto;
+    white-space: nowrap;
+    width: auto;
+    }
+    /* line 74, book.scss */
+    .list-avatar .list-avatar-item {
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      padding: 0px 10px;
+      padding-top: 10px;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+      .wrap-avatar-boookig {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        padding: 0px 10px;
+        padding-top: 10px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* line 87, book.scss */
+      .list-avatar .list-avatar-item .avatar {
+        display: block;
+        width: 140px;
+        height: auto;
+        /* border: 2px solid #7cde56; */
+        border-radius: 50%;
+        cursor: pointer; }
+    /* line 97, book.scss */
+    .list-avatar .list-avatar-item:active {
+      background-color: #e5e5e5;
+      opacity: 0.7; }
+    /* line 101, book.scss */
+
+    .wrap-avatar-boookig:hover .avatar{
+      border: 2px solid #7cde56; }
+    /* .list-avatar .list-avatar-item:hover {
+      background-color: #e4e4e4; } */
+
+  /* line 108, book.scss */
+  .list-avatar-item span img {
+    margin: 0px auto; }
+  /* line 112, book.scss */
+  .list-avatar-item .user-name {
+    overflow: hidden; }
+
+    .icon-info-bookig {
+      float: right;
+    }
+
+    .icon-info-bookig img{
+      width: 32px;
+      height: auto;
+    }
+
+
+  /* line 117, book.scss */
+  .stylish-active  .avatar {
+    border: 2px solid #7cde56; 
+  }
+
+  /* line 121, book.scss */
+  .schedule {
+    text-align: center;
+    margin-top: 75px; }
+    /* line 124, book.scss */
+    .schedule b {
+      padding: 5px 0px; }
+
+  /* line 129, book.scss */
+  .slot {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: unset;
+    border-collapse: unset;
+    border-spacing: 4px; }
+    /* line 137, book.scss */
+    .slot tr td {
+      text-align: center;
+      padding: 10px 36px;
+      border-bottom: 3px solid green; }
+    /* line 143, book.scss */
+    .slot tr .het-slot {
+      border-bottom: 3px solid red; }
+
+  /* line 149, book.scss */
+  .slot tbody tr td:hover {
+    background-color: #b7d4f0; }
+
+  /* line 153, book.scss */
+  .slot-status {
+    padding-top: 5px; }
+
+  /* line 157, book.scss */
+  .nav > li > a {
+    padding: 10px 30px;
+    color: #555; }
+
+  /* line 163, book.scss */
+  .nav-tabs {
+    display: flex; }
+    /* line 166, book.scss */
+    .nav-tabs li {
+      flex-basis: 600px; }
+
+  /* line 171, book.scss */
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #555;
+    color: #fff; }
+
+  .service{
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0px;
+  }
+
+  .service-tittle{
+    text-align: center;
+  }
+
+  .service .ser-tittle{
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+
+  .ser-perm div, .ser-dye div{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .line-1-2{
+    margin-left: 50px;
+  }
+  .line-2-2{
+    margin-left: 20px;
+  }
+  .line-1-3{
+    margin-left: 50px;
+  }
+  .line-2-3{
+    margin-left: 43px;
+  }
+  .line-1-4{
+    margin-left: 85px;
+  }
+  .line-2-4{
+    margin-left: 35px;
+  }
+
+  .btn-book{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+  }
+
+  .btn-book button{
+    background: #495057;
+    color: white;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    display: block;
+    width: 25%;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* line 177, book.scss */
+  .modal-header {
+    text-align: center; }
+    /* line 179, book.scss */
+    .modal-header img {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
       border-radius: 50%;
       cursor: pointer; }
-  /* line 97, book.scss */
-  .list-avatar .list-avatar-item:active {
-    background-color: #e5e5e5;
-    opacity: 0.7; }
-  /* line 101, book.scss */
-  .list-avatar .list-avatar-item:hover {
-    background-color: #e4e4e4; }
-
-/* line 108, book.scss */
-.list-avatar-item span img {
-  margin: 0px auto; }
-/* line 112, book.scss */
-.list-avatar-item .user-name {
-  overflow: hidden; }
-
-/* line 117, book.scss */
-.stylish-active {
-  background-color: #9f9a9a !important; }
-
-/* line 121, book.scss */
-.schedule {
-  text-align: center;
-  margin-top: 10px; }
-  /* line 124, book.scss */
-  .schedule b {
-    padding: 5px 0px; }
-
-/* line 129, book.scss */
-.slot {
-  width: 100%;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  border-top: unset;
-  border-collapse: unset;
-  border-spacing: 4px; }
-  /* line 137, book.scss */
-  .slot tr td {
-    text-align: center;
-    padding: 10px 32px;
-    border-bottom: 3px solid green; }
-  /* line 143, book.scss */
-  .slot tr .het-slot {
-    border-bottom: 3px solid red; }
-
-/* line 149, book.scss */
-.slot tbody tr td:hover {
-  background-color: #b7d4f0; }
-
-/* line 153, book.scss */
-.slot-status {
-  padding-top: 5px; }
-
-/* line 157, book.scss */
-.nav > li > a {
-  padding: 10px 30px;
-  color: #555; }
-
-/* line 163, book.scss */
-.nav-tabs {
-  display: flex; }
-  /* line 166, book.scss */
-  .nav-tabs li {
-    flex-basis: 600px; }
-
-/* line 171, book.scss */
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-  background-color: #555;
-  color: #fff; }
-
-/* line 177, book.scss */
-.modal-header {
-  text-align: center; }
-  /* line 179, book.scss */
-  .modal-header img {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 50%;
-    cursor: pointer; }
-  /* line 187, book.scss */
-  .modal-header .popup-name {
-    padding: 10px 0px;
-    text-align: center; }
-  /* line 192, book.scss */
-  .modal-header .rate i {
-    color: #ff9321; }
-  /* line 196, book.scss */
-  .modal-header .close {
-    position: absolute;
-    top: 10px;
-    left: 575px; }
-
-/* line 204, book.scss */
-.modal-body .list-cmt {
-  height: 300px;
-  overflow: scroll;
-  border: 1px solid #e2e2e2;
-  padding: 0px 10px;
-  padding-top: 10px; }
-  /* line 210, book.scss */
-  .modal-body .list-cmt .msg-box {
-    position: relative;
-    border: 1px solid #555;
-    border-radius: 12px;
-    border-bottom-right-radius: unset;
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 15px; }
-    /* line 219, book.scss */
-    .modal-body .list-cmt .msg-box .cmt-user {
+    /* line 187, book.scss */
+    .modal-header .popup-name {
+      padding: 10px 0px;
+      text-align: center; }
+    /* line 192, book.scss */
+    .modal-header .rate i {
+      color: #ff9321; }
+    /* line 196, book.scss */
+    .modal-header .close {
       position: absolute;
-      top: -10px;
-      left: 7px;
-      background-color: white;
-      font-size: 15px;
-      margin: 0px;
+      top: 10px;
+      left: 575px; }
+
+  /* line 204, book.scss */
+  .modal-body .list-cmt {
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid #e2e2e2;
+    padding: 0px 10px;
+    padding-top: 10px; }
+    /* line 210, book.scss */
+    .modal-body .list-cmt .msg-box {
+      position: relative;
+      border: 1px solid #555;
+      border-radius: 12px;
+      border-bottom-right-radius: unset;
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 15px; }
+      /* line 219, book.scss */
+      .modal-body .list-cmt .msg-box .cmt-user {
+        position: absolute;
+        top: -10px;
+        left: 7px;
+        background-color: white;
+        font-size: 15px;
+        margin: 0px;
+        width: auto;
+        padding: 0px 3px; }
+      /* line 229, book.scss */
+      .modal-body .list-cmt .msg-box p {
+        width: auto;
+        margin: 0px;
+        font-size: 13px; }
+    /* line 235, book.scss */
+    .modal-body .list-cmt .right {
+      text-align: right;
+      border-radius: 12px;
+      border-bottom-left-radius: unset;
+      left: 105px; }
+      /* line 240, book.scss */
+      .modal-body .list-cmt .right .cmt-user {
+        top: -10px;
+        left: 360px; }
+
+
+  /* ==================================== Repsonsive ================== */
+        /* ipad pro */
+
+  @media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) {
+
+    /* line 259, book.scss */
+    .book-container-flex, .slot {
+      width: 100%; }
+
+    /* line 263, book.scss */
+    .list-avatar {
+      max-width: 100%;
+      width: 100%; } }
+
+  @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape){
+    .book-container{
+      width: 1024px;
+    }
+  }
+
+  @media only screen and (max-device-width: 1024px) and (orientation: portrait){
+
+    .book-container{
+      width: 1024px;
+    }
+  }
+
+
+  @media only screen and (max-device-width: 736px) and (min-device-width: 667px) and (orientation: landscape){
+    .book-container{
       width: auto;
-      padding: 0px 3px; }
-    /* line 229, book.scss */
-    .modal-body .list-cmt .msg-box p {
+    }
+  }
+
+  @media only screen and (max-device-width: 568px) and (orientation: landscape){
+    .book-container{
       width: auto;
-      margin: 0px;
-      font-size: 13px; }
-  /* line 235, book.scss */
-  .modal-body .list-cmt .right {
-    text-align: right;
-    border-radius: 12px;
-    border-bottom-left-radius: unset;
-    left: 105px; }
-    /* line 240, book.scss */
+    }
+
+    .book-container-flex {
+      width: 100%;
+    }
+
+    .slot tr td {
+      padding: 10px 28px;
+    }
+
+    .ser-perm div, .ser-dye div {
+      display: block;
+    }
+
+    .line-1-2, .line-2-2, .line-1-3, .line-2-3, .line-1-4, .line-2-4{
+      margin-left: unset;
+    }
+
+  }
+
+        /* ipad */
+
+  @media only screen and (max-device-width: 768px) and (orientation: portrait){
+
+    .book-container{
+      width: auto;
+    }
+  }
+
+
+      /* Iphone X , 6/7/8+ */
+  @media only screen and (max-device-width: 414px) and (min-device-width: 320px) and (orientation: portrait) {
+    /* line 276, book.scss */
+    .book-container{
+      width: auto;
+      padding: 0px 5px;
+    }
+
+    .book-container-flex, .slot {
+      width: 100%; }
+
+    /* line 280, book.scss */
+    .list-avatar {
+      max-width: 100%;
+      width: 100%; }
+
+    .slot tr td {
+      padding: unset;
+    }
+
+    .nav-tabs li{
+      padding: 0px 10px;
+    }
+
+
+    .ser-perm div, .ser-dye div {
+      display: block;
+    }
+
+    .line-1-2, .line-2-2, .line-1-3, .line-2-3, .line-1-4, .line-2-4{
+      margin-left: unset;
+    }
+
+    .modal-body .list-cmt .msg-box {
+      width: 65%;
+    }
+
     .modal-body .list-cmt .right .cmt-user {
-      top: -10px;
-      left: 360px; }
+      right: 10px;
+      left: unset;
+    }
+  }
 
-@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) {
-  /* line 259, book.scss */
-  .book-container-flex, .slot {
-    width: 100%; }
+@media only screen and (max-device-width: 320px) and (orientation: portrait){
+  .modal-body .list-cmt .msg-box {
+    width: 55%;
+  }
 
-  /* line 263, book.scss */
-  .list-avatar {
-    max-width: 100%;
-    width: 100%; } }
-@media only screen and (max-device-width: 414px) and (min-device-width: 375px) and (orientation: portrait) {
-  /* line 276, book.scss */
-  .book-container-flex, .slot {
-    width: 100%; }
+  .nav-tabs li{
+    padding: unset;
+  }
+}
 
-  /* line 280, book.scss */
-  .list-avatar {
-    max-width: 100%;
-    width: 100%; } }
+  /* custom radio button */
+
+  /* The container */
+  .container-checkbox-service {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .container-checkbox-service input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container-checkbox-service:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .container-checkbox-service input:checked ~ .checkmark {
+    background-color: #555;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container-checkbox-service input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .container-checkbox-service .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  /* replace bootstrap */
+  /* header */
+
+  .modal-open {
+    overflow: auto;
+    padding-right: unset !important;
+  }
+  body{
+    line-height: unset !important;
+    padding-right: unset !important;
+  }
+
+  /* .xs-6 label{
+    display: unset;
+  } */
+
+  .header__navbar-link, .header__login {
+    color: black;
+  }
+
+  .header__navbar-list{
+    margin-bottom: unset;
+  }
+
+  /* .container {
+    width: 1200px;
+  } */
+
+
+  .header__navbar-link:hover, .header__login:hover{
+    color: unset;
+    text-decoration: unset;
+  }
+    /* header-end */
+
+    @media only screen and (min-width: 100px) and (max-width: 767px) {
+      .time-booking li a {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }

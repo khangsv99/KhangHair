@@ -19,6 +19,10 @@ body {
     font-size: 16px;
 }
 
+main {
+    margin-top: 95px;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -33,7 +37,8 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--pd);;
+    padding: 5px var(--pd);
+    ;
 }
 
 .row {
@@ -154,6 +159,14 @@ a {
         flex: 0 0 8.33%;
         max-width: 8.33%;
     }
+    .m-10 {
+        flex: 0 0 83.3%;
+        max-width: 83.3%;
+    }
+    .m-11 {
+        flex: 0 0 91.67%;
+        max-width: 91.67%;
+    }
     .m-2 {
         flex: 0 0 16.67%;
         max-width: 16.67%;
@@ -185,6 +198,15 @@ a {
     .lm-6 {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #item-dropdown {
+        display: block;
+    }
+    label[for="item-dropdown"] {
+        display: block!important;
     }
 }
 
@@ -236,7 +258,6 @@ a {
     height: auto;
 }
 
-
 /* Header */
 
 .header {
@@ -256,7 +277,11 @@ a {
 .header__navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.header__navbar label{
+    display: none;
 }
 
 .header__navbar-list {
@@ -270,7 +295,15 @@ a {
     font-weight: 600;
 }
 
-.header__navbar-link {}
+.header__navbar-link {
+    color: black;
+}
+
+a.header__navbar-link:hover {
+    text-decoration: none;
+    color: #faa84f;
+    transition: all 0.25s ease-out;
+}
 
 .header__login {
     display: flex;
@@ -279,13 +312,22 @@ a {
     border-radius: 3px;
     background-color: gold;
     padding: 7px;
+    color: #000;
     max-width: 130px;
+}
+
+.header__login:focus {
+    text-decoration: none;
+    color: #000;
+}
+.header__login:hover{
+    text-decoration: none;
+    color: rgb(100, 99, 99);
 }
 
 .header__logo {
     max-width: 100px;
     display: block;
-
 }
 
 .header__login-icon {
@@ -293,6 +335,135 @@ a {
 }
 
 #item-dropdown, .header__navbar-logo, .header__navbar-bars {
+    display: none;
+}
+
+label[for="item-dropdown"] {
+    display: none;
+    font-size: 30px;
+}
+
+.header__cart-wp, .header__user, .header__logout {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+.header__cart {
+    flex: 1;
+    display: flex;
+}
+
+.header__cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.header__cart {
+    margin-right: 20px;
+}
+
+.header__cart-count i {
+    font-size: 13px;
+}
+
+.header__logout {
+    flex: 1;
+}
+
+.header__user {
+    margin-right: 10px;
+}
+
+.header__info-text {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header__user-wp {
+    display: flex;
+    align-items: center;
+}
+
+.header__account {
+    display: flex;
+}
+
+.header__cart-img {
+    width: 35px!important;
+    height:35px!important;
+}
+
+.header__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__info::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: -15px;
+}
+
+.header__popup-thumb {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header__popup {
+    display: none;
+    position: absolute;
+    top: 130%;
+    background: #fff;
+    padding: 10px;
+    width: 200px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.header__info:hover .header__popup {
+    display: block;
+}
+
+.header__popup-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.header__popup-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.header__popup-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header__popup-link:hover {
+    color: #faa84f;
+    text-decoration: none;
+}
+
+.header__logout-mobile {
     display: none;
 }
 
@@ -364,8 +535,13 @@ a {
     margin: 10px 0;
 }
 
+.footer__link {
+    color: #999999;
+}
+
 .footer__link:hover {
     color: #dea43e;
+    text-decoration: none;
 }
 
 .footer__desc i {
@@ -375,6 +551,10 @@ a {
 .copyright {
     text-align: center;
     padding-top: 30px;
+}
+
+.header__logout-mobile, .header__cart, .header__info {
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -388,9 +568,13 @@ a {
         flex-direction: column;
         left: 0;
         top: 0;
-        padding: 30px 0;
+        padding: 20px 0;
         background-color: #fff;
         align-items: flex-start;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .header__menu-bars {
+        width: 100%;
     }
     .header__navbar-list {
         flex-direction: column;
@@ -406,9 +590,13 @@ a {
         margin-top: 20px;
     }
     .header__navbar-bars {
-        font-size: 24px;
         display: block;
         text-align: right;
+    }
+    .header__navbar-bars-times, .header__navbar-bars--remove i {
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
     }
     .header__navbar-bars--remove {
         position: absolute;
@@ -431,18 +619,34 @@ a {
     .header__navbar-logo {
         display: block;
     }
-}
-
-
-@media (max-width: 425px) {
-    .header__logo {
-        max-width: 150px;
-        display: block;
+    .header__account {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 10px 15px 0 15px;
+    }
+    .header__cart {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header__user-wp {
+        flex: 1;
+        justify-content: space-around;
+    }
+    .header__info {
+        flex: 1;
+    }
+    .header__info:hover .header__popup {
+        display: none;
+    }
+    .header__logout-mobile {
+        display: flex;
+        flex: 1;
+    }
+    .header__cart-img {
+        width: 30px!important;
+        height:30px!important;
+    }
+    .header__info-text{
+        font-size:13px;
     }
 }
-
-@media (max-width:378px) {
-   
-}
-
-@media (max-width: 300px) {}

@@ -16,6 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('idOrder');
             $table->string('payMents');//0: online, 1:Tien mat
+            $table->string('note');
             $table->integer('totalMoney');
             $table->string('status');//trang thai giao
             $table->unsignedInteger('idUser');

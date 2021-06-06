@@ -1,41 +1,83 @@
-@extends('_adminView.root')
+@extends('_adminView.index')
 
 @section('content')
-	<h3>Chi tiet ca buoc nha may con di!</h3>
-	<li><a href="/admin/add-details-service"><i class="fa fa-desktop fa-3x"></i>
-			Add new</a></li>
-	<table>
-		<thead>
-			<tr>
-				<th></th>
-				<th>Title</th>
-				<th>Categories</th>
-				<th>Date</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach ($steps as $step)
-				<tr>
-					<td>
-						
-					</td>
-					<td>
-						{{$step->step}}: {{$step->nameStep}}
-						<a href="admin/edit-step/{{$step->id}}">Edit</a> | <a 
-						href="admin/delete-step/{{$step->id}}">Delete</a>
-					</td>
-					<td>
-						{{$service->name}}
-					</td>
-				</tr>
-			@endforeach
-		</tbody>
-	</table>
+<section class="right">
+	<div class="right__content">
+		<div class="right__head d-flex">
+			<div class="right__head-post d-flex">
+				<h5 class="right__head-post-title">Posts</h5>
+				<a href="./NewPost.html" class="right__head-post-add">Add New</a>
+			</div>
+			<div class="right__head-search">
+				{{-- <input type="text" class="right__head-search-input">
+				<button type="button" class="right__head-search-btn">Search Posts</button> --}}
+			</div>
+		</div>
+		<div class="right__head-bar d-flex">
+			<div class="right__head-bar-select">
+				{{-- <input type="checkbox" id="all" class="right__head-bar-checkbox">
+				<label for="all" class="right__head-bar-label">All</label>
+				<button class="right__head-bar-delete">Delete</button> --}}
+			</div>
+			<span class="right__head-bar-count">2 items</span>
+		</div>
 
-	
-	{{$step->step}} : {{$step->nameStep}}
-	<p>{{$step->content}}</p>
-    	<img src="{{$step->image}}" alt="Loi anh roi!" width="500" height="500">
-    <h5>------------------------</h5>
-	
+		<div class="right__table">
+			<div class="right__tableWrapper">
+				<table>
+					<thead>
+						<tr>
+							<th style="text-align: left;">Title</th>
+							<th>Categories</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						@foreach ($steps as $step)
+
+						<tr class="right__table-item">
+							<td data-label="Email" style="text-align: left;">
+								{{$step->step}} {{$step->title}}
+								<div class="right__table-item-change">
+									<a class="right__table-item-btn right__table-item-btn--edit" href="http://localhost:8000/admin/edit-step/{{$step->id}}">Edit</a>
+									|
+									<a class="right__table-item-btn right__table-item-btn--delete" href="admin/delete-step/{{$step->id}}">Delete</button>
+								</div>
+							</td>
+							<td data-label="Số Hoá Đơn">{{$service->title}}</td>
+							<td data-label="ID Sản Phẩm">{{$step->created_at}}</td>
+
+						</tr>
+						@endforeach
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<span>{!! $steps->render() !!}</span>
+
+		{{-- <div class="right_pagination d-flex">
+
+			<span class="right_pagination-item">
+				1
+			</span>
+			<span class="right_pagination-item">
+				2
+			</span>
+			<span class="right_pagination-item">
+				3
+			</span>
+
+			<span class="right_pagination-item">
+				...
+			</span>
+
+			<span class="right_pagination-item">
+				<i class="fas fa-arrow-right"></i>
+			</span>
+		</div> --}}
+	</div>
+</section>
 @endsection

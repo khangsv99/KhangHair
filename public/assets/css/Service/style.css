@@ -60,10 +60,6 @@ a {
 
 /* style service other */
 
-.service{
-    padding: 50px 0;
-}
-
 .service-wrapper{
     background-color: var(--white);
 }

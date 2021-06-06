@@ -30,7 +30,7 @@ class RegisterController extends Controller
         $this->guard()->login($user);
 
         return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
+                        ?: redirect('/');//$this->redirectPath()
     }
 
     protected function validator(array $data)
@@ -49,6 +49,8 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
+            'token' => '',
+            'human_rights' => 2,
             'password' => Hash::make($data['password']),
         ]);
     }

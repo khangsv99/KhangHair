@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cart extends Model
 {
+
+	protected $fillable = [
+        'idPro', 'idUser', 'amount',
+    ];
+
 	public function products () {
 		return $this->belongsTo(related: 'App\Models\Products', foreignKey:'idPro', ownerKey:'idPro');
 	}

@@ -39,5 +39,10 @@ class ContactController extends Controller
 			$message->subject('Khách Hàng Liên Hệ');
 		});
 
+		if (Mail::failures()) {
+			// return response showing failed emails
+			return redirect()->back()->withErrors('errors', 0)->withInput();
+		}
+		return redirect('/contact')->with('success', 'you have send mail successfully');
 	}
 }

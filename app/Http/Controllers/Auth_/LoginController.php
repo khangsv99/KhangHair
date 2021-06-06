@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use App\User;
+use App\Models\Cart;
 
 class LoginController extends Controller
 {
@@ -42,27 +43,39 @@ class LoginController extends Controller
 
             //lấy user từ database lên để lấy thông tin
             $results = DB::table('user')
-                ->where('phone', $request->phone)
-                ->get();
+                ->where('email', $request->email)
+                ->first();
 
             $stringToken = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(15/strlen($x)) )),1,15) . (string)time();
             //update token vao database
             DB::table('user')
-            ->where('phone', $request->phone)
+            ->where('email', $request->email)
             ->update(['token' => $stringToken]);
 
 
             $array = [
-                    "result" => true,
-                    "data" => $results,
-                    "token" => $stringToken 
-                    //"message" => "Order thành công!",
-                ];
+                "result" => true,
+                "data" => $results,
+                "token" => $stringToken 
+                //"message" => "Order thành công!",
+            ];
+            $carts = Cart::with('products', 'users')->where('idUser', $results->id)->get();
+            $request->session()->put('countCart',count( $carts));
             $jsonData = json_encode($array);
-            $request->session()->put('user', $request->phone);
             $request->session()->flash('status', 'Login thành công!');
+            $request->session()->put('user', $results);
 
-            return redirect('/admin/index')->with('keyName', $jsonData);
+            if ((int)$results->human_rights == 0) // admin
+            {
+                return redirect('/admin/index')->with('keyName', $jsonData);
+            }
+            if ((int)$results->human_rights == 1) // eml
+            {
+                return redirect('/admin/index')->with('keyName', $jsonData); // does not exist page
+            }
+
+            return redirect('/')->with('keyName', $jsonData);
+            
             //return View('_adminView.add_service')->with('keyName', $jsonData);
             //return $this->sendLoginResponse($request);
         }
@@ -72,9 +85,9 @@ class LoginController extends Controller
         // user surpasses their maximum number of attempts they will get locked out.
         $this->incrementLoginAttempts($request);
 
-        $phone = DB::table('user')->select('phone')->where('phone', $request->phone)->get();
+        $email = DB::table('user')->select('email')->where('email', $request->email)->get();
 
-        if (count($phone) === 0) {
+        if (count($email) === 0) {
             $message = "Account not exit! :)) Please create a account!";
         } 
         else {
@@ -89,7 +102,7 @@ class LoginController extends Controller
                 ];
 
         $jsonData_l = json_encode($array_l);
-        return View('_auth.login')->with('keyName', $jsonData_l);
+        return redirect('/')->with('keyName', $jsonData_l);
         //return $this->sendFailedLoginResponse($request);
     }
 
@@ -160,7 +173,7 @@ class LoginController extends Controller
      */
     public function username()
     {
-        return 'phone';
+        return 'email';
     }
 
     /**
@@ -187,15 +200,15 @@ class LoginController extends Controller
      * @return mixed
      */
     public function log() {
-        return view('_auth.logout');
+        return redirect('/');
     }
 
     public function loggedOut(Request $request)
     {
-        $p = $request->session()->get('user');
-        var_dump($p);
+        $p = $request->session()->get('email');
+
         DB::table('user')
-            ->where('phone', $p)
+            ->where('email', $p)
             ->update(['token' => '']);
 
         $this->guard()->logout();
@@ -203,8 +216,8 @@ class LoginController extends Controller
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-        return view('_auth.login');
-        //
+        return redirect('/');
+
     }
 
     /**

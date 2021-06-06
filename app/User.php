@@ -18,7 +18,7 @@ class User extends Authenticatable
 
     protected $table = 'user';
     protected $fillable = [
-        'name', 'phone', 'email', 'password',
+        'name', 'phone', 'email', 'password', 'token', 'human_rights',
     ];
 
     /**
@@ -49,5 +49,17 @@ class User extends Authenticatable
 
     public function Emp_book(){
         return $this->hasMany(related: 'App\Models\Books', foreignKey: 'idEmp', localKey: 'id');
+    }
+
+    public function user_comment(){
+        return $this->hasMany(related: 'App\Models\Comment', foreignKey: 'idUser', localKey: 'id');
+    }
+
+    public function emp_comment(){
+        return $this->hasMany(related: 'App\Models\Comment', foreignKey: 'idEmp', localKey: 'id');
+    }
+
+    public function payer(){
+        return $this->hasMany(related: 'App\Models\Payments', foreignKey: 'payer', localKey: 'id');
     }
 }

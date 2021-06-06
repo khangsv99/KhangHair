@@ -1,21 +1,3 @@
-/* :root {
-    --pd: 10px;
-    --ticket-ml: 20px;
-    --red: red;
-    --white: white;
-    --text-color: #999999;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-} */
-
 ul {
     padding-left: 0;
     margin: 0;
@@ -65,7 +47,7 @@ a {
 }
 
 section {
-    margin: 50px 0;
+    /* margin: 50px 0; */
 }
 
 .heading-content {
@@ -79,7 +61,8 @@ section {
 }
 
 .heading-more {
-    color: rgb(226, 19, 19);
+    /* color: rgb(226, 19, 19); */
+    color: #9bb3cc;
 }
 
 .content {
@@ -98,6 +81,10 @@ section {
     margin: 5px;
 }
 
+.brand {
+    background-color: #eeebeb;
+}
+
 .brand__item {
     display: flex;
 }
@@ -106,8 +93,6 @@ section {
     background-color: #FDFDFD;
     margin-bottom: 30px;
     padding: 15px;
-    flex: 25%;
-    /* max-width: 25%; */
 }
 
 .product__item:hover {
@@ -132,6 +117,10 @@ section {
     color: #dea43e;
 }
 
+.product__link--active {
+    color: #dea43e;
+}
+
 .product__price--new {
     font-size: 14px;
     font-weight: 800;
@@ -150,7 +139,7 @@ section {
 
 .ten-step {
     /* padding: 30px; */
-    background-color: #FBF4F0;
+    background-color: #eeebeb;
 }
 
 .ten-step__list {
@@ -195,7 +184,7 @@ section {
 }
 
 .ten-step__sidebar-desc, .ten-step__item-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
     flex: 1;
@@ -250,6 +239,9 @@ section {
     color: #dea43e;
 }
 
+.ten-step__sidebar-item--active {
+    color: #dea43e;
+}
 .ten-step__sidebar-desc, .ten-step__sidebar-price {
     margin: 0;
 }
@@ -265,13 +257,6 @@ section {
 @media only screen and (max-width: 1023px) {
     .brand__item {
         flex-wrap: wrap;
-    }
-    .product__item {
-        flex: 33.33%;
-        /* max-width: 33.33%; */
-    }
-    .hair-hot__item {
-        flex: 33.33%;
     }
     .ten-step__nav-list {
         display: flex;
@@ -291,10 +276,6 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
-    .product__item {
-        flex: 50%;
-        max-width: 50%;
-    }
     .heading-title {
         font-size: 16px;
     }
@@ -368,9 +349,14 @@ section {
 .ten-step-mobile .owl-nav button.owl-prev, .ten-step-mobile .owl-nav button.owl-next {
     position: absolute;
     color: rgb(22, 22, 22);
-    font-size: 40px!important;
     top: 50%!important;
-    background-color: #ffffff!important;
+    /* color: #ffffff!important; */
+    width: 20px;
+}
+.ten-step-mobile .owl-nav button.owl-prev span, .ten-step-mobile .owl-nav button.owl-next span{
+    font-size: 35px;
+    background-color: #fff;
+    padding: 3px;
 }
 
 .ten-step-mobile button.owl-next {

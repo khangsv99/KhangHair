@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 class CreateCartsTable extends Migration
 {
@@ -18,7 +19,9 @@ class CreateCartsTable extends Migration
             $table->unsignedInteger('idUser');
             $table->integer('amount');
             $table->timestamps();
+            //$table->primary(array('idPro', 'idUser'));
         });
+
 
         Schema::table('carts', function (Blueprint $table) {
             

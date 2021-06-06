@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/NewPost.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="dashboard">
+                <div class="left">
+                    <span class="left__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="left__content">
+                        <div class="left__logo"><a href="index.html">Dashboard</a> </div>
+                        <div class="left__profile">
+                            <div class="left__image"><img src="assets/avatar.jpg" alt=""></div>
+                            <p class="left__name">Bùi Ngọc Tuấn</p>
+                        </div>
+                        <ul class="left__menu">
+                            <li class="left__menuItem">
+                                <div class="left__title">Sản Phẩm
+
+                                    <i class="fas fa-plus"></i>
+
+                                </div>
+                                <div class="left__text">
+                                    <a class="left__link" href="#">Chèn Sản Phẩm</a>
+                                    <a class="left__link" href="#">Xem Sản Phẩm</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title">Danh Mục SP
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="left__text">
+                                    <a class="left__link" href="#">Chèn Danh Mục</a>
+                                    <a class="left__link" href="#">Xem Danh Mục</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title">Thể Loại
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="left__text">
+                                    <a class="left__link" href="#">Chèn Thể Loại</a>
+                                    <a class="left__link" href="#">Xem Thể Loại</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title">Đăng xuất
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="right">
+                    <h5 class="right__head-post-title">Add New Posts</h5>
+                    <div class="right__content d-flex">
+                        <div class="right__add-post">
+                            <div class="right__head-new-post">
+                                <input type="text" name="" id="" class="right__head-new-post-input"
+                                    placeholder="Enter title here">
+                            </div>
+                        </div>
+                        <div class="right__add-image">
+                            <h5 class="right__add-image-title">Feature Image</h5>
+                            <input type="file" hidden accept="image/*" id="feature-image" onchange="loadFile(event)">
+                            <div class="show-image">
+                                <img id="output" class="img-responsive" />
+
+                            </div>
+                            
+                            <p class="right__add-image-notify">Click the image to edit or upload image</p>
+                            <label for="feature-image" class="right__add-image-label">Set feature image</label>
+                            <button class="right__add-image-btn">Upload</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        var loadFile = function(event) {
+          var output = document.getElementById('output');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          output.onload = function() {
+            URL.revokeObjectURL(output.src) // free memory
+          }
+          let label = document.querySelector('.right__add-image-label');
+          label.innerHTML ='Remove feature image';
+          console.log(label.innerHTML);
+        };
+      </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

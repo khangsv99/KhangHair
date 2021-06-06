@@ -3,7 +3,7 @@
 @section('content')
 
 
-<section class="detail-product">
+<section class="detail-product" id="detail-product">
         <section class="container detail-product-wp">
             <div class="row">
                 <div class="col l-6 m-12">
@@ -11,25 +11,26 @@
                         <img src="{{$product->thumbnail}}" alt="" class="detail-product__img img-responsive">
                     </div>
                 </div>
-                <div class="col l-6 m-12">
-                    <div class="detail-product__right">
+                <div class="col l-6 m-12 detail-product__right">
+                    <div class=" detail-product__right--fixed">
                         <h3 class="detail-product__right-title">
 							{{$product->title}}
                         </h3>
-                        <div class="detail-product__right-price">
-                            <span class="detail-product__right-price-new">{{$product->price}}đ</span>
-                        </div>
+                        {{-- <div class="detail-product__right-price">
+                            <span class="detail-product__right-price-new">Giá tiền: {{$product->price}}đ</span>
+                        </div> --}}
                         <div class="detail-product__right-quality">
                             <div class="detail-product__right-value">
-                                <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
-                                <input type="number" id="quantity" name="quantity" value="1" min="1"
-                                    class="detail-product__right-selector" aria-label="Quantity input">
-                                <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                                {{-- <div class="detail-product__right-price-new"></div> --}}
+                                <div class="detail-product__right-price">
+                                    <span>Giá tiền:</span><span class="detail-product__right-price-new">{{$product->price}}đ</span>
+                                </div>
                             </div>
-                            <button class="detail-product__right-btn">
-                                <a href="http://localhost:8000/cart">THÊM VÀO GIỎ</a> 
-                            </button>
+                            <div class="detail-product__right-submit">
+                                    <a href="/cart/{{$product->idPro}}" class="detail-product__right-btn">THÊM VÀO GIỎ</a>
+                            </div>
                         </div>
+
                         <div class="detail-product__right-label">
                             <i class="fas fa-check-circle"></i>
                             <span>CHẤT LƯỢNG ĐẢM BẢO Hơn 200 Thương Hiệu hàng đầu Thế Giới</span>
@@ -47,7 +48,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col l-6 m-12">
+                <div class="col l-12 m-12">
                     <div class="detail-product-desc">
                         <p class="detail-product-desc-title">
                             MÔ TẢ SẢN PHẨM

@@ -1,0 +1,375 @@
+[33mcommit 3f0de82e2029be19d301053a718e33a0a6fd04ea[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri May 14 19:48:08 2021 +0700
+
+    table payment
+
+[33mcommit 137f0d85e7864b84117853e456627ad1c1650af9[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mcreate_table_payment[m[33m)[m
+Author: DESKTOP-K3G3SVR\Vũ Hoàng <vuhoang24c@gmail.com>
+Date:   Wed May 12 22:25:59 2021 +0700
+
+    fix redundant class name "tab-pane"
+
+[33mcommit a8833be32e24a92a94250109c483a7e8ebf46fd6[m
+Author: DESKTOP-K3G3SVR\Vũ Hoàng <vuhoang24c@gmail.com>
+Date:   Wed May 12 00:57:59 2021 +0700
+
+    overwrite bootstrap css responsive
+
+[33mcommit 65bf8d59620cf1d2eba034f4a51ed311d399b9e9[m
+Author: DESKTOP-K3G3SVR\Vũ Hoàng <vuhoang24c@gmail.com>
+Date:   Wed May 12 00:23:01 2021 +0700
+
+    overwrite header bootstrap css
+
+[33mcommit decbb0a77af2b3086125ef6781528e720cf3f6b4[m
+Author: DESKTOP-K3G3SVR\Vũ Hoàng <vuhoang24c@gmail.com>
+Date:   Tue May 11 23:23:00 2021 +0700
+
+    fix flex css
+
+[33mcommit a2c77b9032003db944b124396ed310054bc33c25[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Tue May 11 20:59:08 2021 +0700
+
+    + add UI
+
+[33mcommit 7c7d6502078d468a77e2eb0fc05d7e485616af62[m
+Author: DESKTOP-K3G3SVR\Vũ Hoàng <vuhoang24c@gmail.com>
+Date:   Tue May 11 22:06:56 2021 +0700
+
+    reverse env example
+
+[33mcommit 7f0db4ec820a46714718daaeb171c48c6b15ec7d[m[33m ([m[1;31morigin/backup_master[m[33m)[m
+Merge: 6fb83e3 0f7221a
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Tue May 11 00:42:18 2021 +0700
+
+    Merge branch 'dataservice' of https://github.com/lelamhai/ProjectHair into backup_master
+    
+    # Conflicts:
+    #       app/Http/Controllers/AllController/BookController.php
+    #       app/Http/Controllers/AllController/ContactController.php
+    #       app/User.php
+    #       resources/views/_allView/book.blade.php
+    #       resources/views/_allView/home.blade.php
+
+[33mcommit 0f7221a7f7d18655e76e8deffe60e427598d81ad[m[33m ([m[1;31morigin/dataservice[m[33m)[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun May 9 00:58:10 2021 +0700
+
+    finish contact
+
+[33mcommit 9a6515941027910dec63ed790b2f1b170f7a5aba[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun May 9 00:56:35 2021 +0700
+
+    contact
+
+[33mcommit 9f4a5f2bb050231328b139dedb402d6419e78e84[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon May 10 23:31:13 2021 +0700
+
+    comment
+
+[33mcommit 6fb83e31ed439fdd517f1e9ed447e8fc799a50c5[m
+Author: DESKTOP-0H7VB4A\Khang <Khang>
+Date:   Mon May 10 23:24:51 2021 +0700
+
+    finish contact
+
+[33mcommit b41382bf8c80e9df0d32aca6fb49688ec75448ac[m
+Author: DESKTOP-0H7VB4A\Khang <Khang>
+Date:   Mon May 10 22:30:14 2021 +0700
+
+    page 404 not found
+
+[33mcommit 91a3eee62b94c3f0116b72fb6c78e03a6876adf3[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Mon May 10 00:20:04 2021 +0700
+
+    menu
+
+[33mcommit 70266dcb07ad4fcbe1669f9326381f62ebea10a0[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun May 9 22:33:47 2021 +0700
+
+    fix bug slider page home
+
+[33mcommit 9e5466112a0ce1c728e3814b3d1545c44c059972[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun May 9 21:48:18 2021 +0700
+
+    ﻿fix name layout
+
+[33mcommit 5326f6acf59a7093cc9c62d32cd927691c651eff[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun May 9 21:48:18 2021 +0700
+
+    fix name layout
+
+[33mcommit 315c1dfd1bc28daa2c799a151c5bc236c3e7d42a[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat May 8 22:04:24 2021 +0700
+
+    cart and book
+
+[33mcommit d2dcd4813b319cccb2eb958dbd5e9d447ebd178c[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon May 3 22:19:27 2021 +0700
+
+    foreign key and data
+
+[33mcommit fd6ab45a38a638a26e8a780130b1813cb51ad985[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun May 9 00:58:10 2021 +0700
+
+    finish contact
+
+[33mcommit 792826439e872de2f7b412e99600cea3d96ba906[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun May 9 00:56:35 2021 +0700
+
+    contact
+
+[33mcommit 18e31b35c6144853ea980e6a060fc063bfe2ee8d[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat May 8 22:04:24 2021 +0700
+
+    cart and book
+
+[33mcommit 23982e32b1db5b05a077fa431a308f6daf4126dd[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon May 3 22:19:27 2021 +0700
+
+    foreign key and data
+
+[33mcommit 7d5f5d2684a474bf554d8d701b410d08c423d322[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Tue Apr 27 00:14:09 2021 +0700
+
+    fix bug page home
+
+[33mcommit 8cc85594f129d69ccbfeb72e0cf220e5fc138077[m
+Merge: ac2b41d 4fab58b
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon Apr 26 23:44:11 2021 +0700
+
+    Merge branch 'dataservice' of https://github.com/lelamhai/ProjectHair into dataservice
+
+[33mcommit ac2b41da9d96ac63a404212ccd70aed6a10f1a3a[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon Apr 26 23:43:42 2021 +0700
+
+    booking and modelHot, logo
+
+[33mcommit f381dec763a79048f46fe8b133104b4f78f9a8dc[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon Apr 26 23:28:55 2021 +0700
+
+    fix route
+
+[33mcommit 4fab58b4f5ead868a95f4c4f70eda8ed1732b800[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon Apr 26 23:28:55 2021 +0700
+
+    fix route
+
+[33mcommit 09807af726ce285cddba05009be64b6466f44279[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Mon Apr 26 23:10:16 2021 +0700
+
+    fix bug header
+
+[33mcommit 3139c2648b30d0f62b02ef17f4a74eb86ecf760b[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Mon Apr 26 21:25:50 2021 +0700
+
+    dataservice
+
+[33mcommit 24f22ba830a83adbc30770d27c51e19c385faf16[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Mon Apr 26 20:50:36 2021 +0700
+
+    service fe
+
+[33mcommit 6dfe2410cd3b66e7593f12fd19e45db452b665c2[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Mon Apr 26 19:54:23 2021 +0700
+
+    rename account
+
+[33mcommit 5d277226d70b304363a62faad73ed30d5c1d1e44[m[33m ([m[1;31morigin/new[m[33m)[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 17:32:58 2021 +0700
+
+    page: product, product detail, cart, step
+
+[33mcommit fb51509f874597ba8e4478bc116f57fedbb5fb5d[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun Apr 25 15:57:15 2021 +0700
+
+    fix loi nho chuyen trang cac thu
+
+[33mcommit 011444d6d65bb45da9daf1149268c711644fa342[m[33m ([m[1;32mservice[m[33m)[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 14:46:20 2021 +0700
+
+    products
+
+[33mcommit 89f27912ccfb50a141f1227a1950e46a779d1e10[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 13:53:59 2021 +0700
+
+    code
+
+[33mcommit 03dbd188371baabce92e1fd9331be2445777bb34[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 11:40:06 2021 +0700
+
+    error home slider
+
+[33mcommit 6fa7bf3d8a886d817b466866784916117aff1b9a[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 11:06:18 2021 +0700
+
+    move css top header
+
+[33mcommit 9897b38d50022c451cfe8b2e6fa03b8b427d0601[m[33m ([m[1;31morigin/backend[m[33m)[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun Apr 25 09:26:25 2021 +0700
+
+    css and script at view home to test
+
+[33mcommit 126b8e7c1e5e266f1ca069fb331ab3b9cc362a86[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sun Apr 25 00:27:12 2021 +0700
+
+    front end
+
+[33mcommit 001515691ae8d675e3045e71272e962f430b7efc[m[33m ([m[1;31morigin/account[m[33m, [m[1;32maccount[m[33m)[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 19:13:00 2021 +0700
+
+    template
+
+[33mcommit 183bc1d6b2c8cc61dc72ba1ec72f5cee1406d6da[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 13:04:15 2021 +0700
+
+    image all
+
+[33mcommit 946c6da90e01e43d2dd707341c6efa7bb846890b[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 11:31:19 2021 +0700
+
+    push folder photos
+
+[33mcommit f440baa736f5778f8ce80fc3e685f63716b84b8c[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 11:30:04 2021 +0700
+
+    file gitinore
+
+[33mcommit 9a8639a0f2cc6d5d2f2bc46b3bd2c14487ccde89[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 11:21:31 2021 +0700
+
+    delete store gitnore
+
+[33mcommit 5c19d99d19e1efbbb1d60312e70cfc0c67add3f3[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 11:19:09 2021 +0700
+
+    push folder image
+
+[33mcommit a3245e3ac04c4f763b9b23dfe80f919cae4847b8[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 24 11:07:58 2021 +0700
+
+    push data to form
+
+[33mcommit d0d56e729cdab106c80e81bc3bc51b867907915e[m
+Merge: b545271 3687ee6
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun Apr 18 09:21:43 2021 +0700
+
+    submit form add_detail_service
+
+[33mcommit b5452716582b2dff2489adbd0aee53f227fb430f[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun Apr 18 09:10:15 2021 +0700
+
+    submib form add_detail_service
+
+[33mcommit 3687ee686a44fc6a4df13386830cfdf10087be83[m
+Author: DESKTOP-0H7VB4A\Hai <haill>
+Date:   Sat Apr 17 14:25:14 2021 +0700
+
+    redirct
+
+[33mcommit 67345fc4162a6dd89bd1ca347c94a84d5d6ee6c5[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 17 12:18:38 2021 +0700
+
+    add service. loi upload anh
+
+[33mcommit c58e5c80570a856d5b53eed2c7213b1c2019985a[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Wed Apr 14 21:50:30 2021 +0700
+
+    show data service and detail
+
+[33mcommit 211c1c0b1397104adc2c96f599e77fed814771d1[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sun Apr 11 14:49:25 2021 +0700
+
+    xong login cac thu. toi 10step kkk
+
+[33mcommit 511d2daef71ec49d0711cd054662cbf91aeb2de3[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Sat Apr 10 17:58:20 2021 +0700
+
+    finish login and register
+
+[33mcommit 6831c6fb0408006d61b900c71f9eddddc02b6346[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri Apr 9 21:49:39 2021 +0700
+
+    test css and js
+
+[33mcommit a0f50a0b24ce53b94873d7f8b0ec2da2368df91a[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri Apr 9 21:18:05 2021 +0700
+
+    fix controller 2
+
+[33mcommit d1af3d68f0d86acebf959b237a0a2cf588014a66[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri Apr 9 21:16:26 2021 +0700
+
+    fix controller
+
+[33mcommit 31b7c2815595a1ef18a9d022bae52434f9bf9d33[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri Apr 9 21:10:22 2021 +0700
+
+    reamne _auth, _allView, add header and footer to auth
+
+[33mcommit 60dcfc13db720a86b5da64f411b9046c36166225[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Fri Apr 9 15:49:44 2021 +0700
+
+    header and footer
+
+[33mcommit 62111f0c3614abedbbc957edb4cc05c5a5521bfb[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Thu Apr 8 23:19:58 2021 +0700
+
+    route cac trang. auth co ban
+
+[33mcommit ebaa5b8d1b795a754cff22e324fdca715447e4e7[m
+Author: stella01012001 <vntya002@gmail.com>
+Date:   Tue Apr 6 20:11:44 2021 +0700
+
+    init project
